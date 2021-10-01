@@ -19,6 +19,7 @@ var saveBtn = $(".saveBtn");
 function colorcode() {
     // need to call upon current time to compare
     var currHour = moment().hour(); 
+    // console.log(currHour);
 
     // loop for time blocks
     $(".timeblocks").each(function() {
@@ -37,13 +38,17 @@ function colorcode() {
 // when clicked on the save btn 
 saveBtn.on("click", function() {
     // console.log(this); works
-    var hour = $(this).siblings(".hour").text();
+   
+   
+    var hour = $(this).siblings().text();
     var description = $(this).siblings(".description").val();
-
+    // console.log("baby")
+    
+    
     // the text in the text area is saved in the storage
     localStorage.setItem(hour, description);
     // console.log(hour);
-    // console.log("description");
+    // console.log(description);
 })
 
 // need to get item and stay after refreshing 
@@ -54,8 +59,8 @@ function userSaved () {
         var currHour = $(this).text();
         var currDescription = localStorage.getItem(currHour);
     
-        console.log(this);
-        console.log(currHour);   
+        // console.log(this);
+        // console.log(currHour);   
 
         if(currDescription !== null) {
             $(this).siblings(".description").val(currDescription);
