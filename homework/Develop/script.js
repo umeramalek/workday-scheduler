@@ -15,6 +15,7 @@ setInterval(currentTimeText,1000);
 // calling upon elements
 var saveBtn = $(".saveBtn");
 
+
 // function to present, past and future color coded 
 function colorcode() {
     // need to call upon current time to compare
