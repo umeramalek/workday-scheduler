@@ -23,6 +23,11 @@ This is a work day schedular given to us with a starter code. I worked on the ja
 
 ### Images
 
+![](homework/Assets/photo1.png)
+![](homework/Assets/photo2.png)
+![](homework/Assets/photo3.png)
+![](homework/Assets/photo4.png)
+![](homework/Assets/workdaygif.gif)
 
 
 ## Built With
